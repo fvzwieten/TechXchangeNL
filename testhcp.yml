@@ -1,4 +1,3 @@
----
 - name: Create a new Terraform run with auto-apply
   hashicorp.terraform.run:
     workspace: "tf-random-pet"
