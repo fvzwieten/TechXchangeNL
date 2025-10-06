@@ -5,7 +5,6 @@
     hashicorp.terraform.run:
       organization: "TechXchangeNL"
       workspace: "tf-random-pet"
-      workspace_id: "ws-2MPL1VUyoTo9DtNr"
       run_message: "Review infrastructure changes"
       plan_only: true
       poll: true
