@@ -3,7 +3,7 @@
   tasks:
   - name: Create a plan-only run for review (with polling)
     hashicorp.terraform.run:
-      workspace_id: "t-random-pet"
+      workspace_id: "tf-random-pet"
       run_message: "Review infrastructure changes"
       plan_only: true
       poll: true
