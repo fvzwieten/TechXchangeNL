@@ -1,15 +1,10 @@
 - name: HCP
   hosts: all
   tasks:
-  - name: Create a new Terraform run with auto-apply
+  - name: Create a plan-only run for review (with polling)
     hashicorp.terraform.run:
-      workspace: "tf-random-pet"
-      organization: "TechXchangeNL"
-      run_message: "Deploy new application version"
-      auto_apply: true
-      variables:
-        - key: "environment"
-          value: "production"
-        - key: "app_version"
-          value: "v1.2.3"
+      workspace_id: "t-random-pet"
+      run_message: "Review infrastructure changes"
+      plan_only: true
+      poll: true
       state: "present"
